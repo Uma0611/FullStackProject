@@ -1,0 +1,107 @@
+body {
+    background-image: url("/assets/Images/alexander-schimmeck-DSOohFTAfno-unsplash.jpg");
+    position: absolute;
+    width: 100%;
+    height: 101.6%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0px;
+    margin-top: -10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+form {
+    border-style: inset;
+    width: 100%;
+    align-items: center;
+    border-collapse: separate;
+    backdrop-filter: blur(30px);
+    margin-left: 75px;
+    border-radius: 30px;
+    margin-top: 5px;
+    height: -50%
+}
+
+.form-control {
+    width: 70%;
+}
+
+.form-control:focus {
+    box-shadow: 4px 4px 15px 8px rgba(172, 59, 97, 0.5);
+}
+
+.form-group {
+    padding-left: 95px;
+    color: #EEE2DC;
+    font-weight: 590;
+    font-size: 18px;
+    padding-top: -60px;
+}
+
+form button {
+    margin-left: 165px;
+    margin-bottom: 10px;
+    background: #AC3B61;
+    color: #EEE2DC;
+    cursor: pointer;
+    transition: .4s;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 40px;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background: #EEE2DC;
+    color: #AC3B61;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: -5px;
+    font-family: 'Rokkitt', serif;
+    margin-left: 10px;
+    color: #EEE2DC;
+}
+
+h2 {
+    text-shadow:
+        0 0 7px #123C69,
+        0 0 10px #123C69,
+        0 0 21px #123C69,
+        0 0 42px #AC3B61,
+        0 0 82px #AC3B61,
+        0 0 92px #AC3B61,
+        0 0 102px #AC3B61,
+        0 0 151px #AC3B61;
+    animation: glow 0.80s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes glow {
+    100% {
+        text-shadow:
+            0 0 4px #123C69,
+            0 0 11px #123C69,
+            0 0 19px #123C69,
+            0 0 40px #AC3B61,
+            0 0 80px #AC3B61,
+            0 0 90px #AC3B61,
+            0 0 100px #AC3B61,
+            0 0 151px #AC3B61;
+    }
+
+    0% {
+        text-shadow:
+            0 0 4px #123C69,
+            0 0 10px #123C69,
+            0 0 18px #123C69,
+            0 0 38px #AC3B61,
+            0 0 73px #AC3B61,
+            0 0 80px #AC3B61,
+            0 0 94px #AC3B61,
+            0 0 140px #AC3B61;
+    }
+}

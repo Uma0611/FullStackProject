@@ -1,0 +1,35 @@
+<head>
+</head>
+
+<body>
+    <div class="geekcb-wrapper">
+        <div class="geekcb-card-login">
+            <h1 class="geekcb-card-title">GET IN TOUCH</h1>
+            <p>Address: 123,Green Garden,TNagar,Chennai</p>
+            <p>Contact: 9098884777</p>
+            <p>Email: FlyHigh@gmail.com</p>
+            <p>Website: www.FlyHigh.com</p>
+            <form autocomplete="off" class="geekcb-form-login">
+                <div class="geekcb-field-container">
+                    <input class="geekcb-field" placeholder=" " type="text" name="nameOfUser" [(ngModel)]="nameOfUser"
+                        required>
+                    <label class="geekcb-field-label">Name</label>
+                </div>
+
+                <div class="geekcb-field-container">
+                    <input class="geekcb-field" placeholder=" " type="email" name="mailId" [(ngModel)]="mailId"
+                        required>
+                    <label class="geekcb-field-label">Email</label>
+                </div>
+
+                <div class="geekcb-field-container">
+                    <textarea class="geekcb-field" placeholder=" " type="text" name="Message" [(ngModel)]="Message"
+                        rows="3"></textarea>
+                    <label class="geekcb-field-label">Message</label>
+                </div>
+
+                <button class="geekcb-btn" (click)=contactSubmit()>Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
