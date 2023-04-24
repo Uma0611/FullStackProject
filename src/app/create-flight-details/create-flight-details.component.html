@@ -1,0 +1,55 @@
+<body>
+    <h2> Save Airline Details </h2>
+    <div class="col-md-6 offset-md-3">
+        <form class="form-inline" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label> Airline name</label>
+                <input type="text" class="form-control" id="flightName" [(ngModel)]="flight.flightName"
+                    name="flightName" placeholder="Airline Name" required>
+            </div>
+
+            <div class="form-group">
+                <label> Source point</label>
+                <input type="text" class="form-control" id="initialPoint" [(ngModel)]="flight.initialPoint"
+                    name="initialPoint" placeholder="Source" required>
+            </div>
+
+            <div class="form-group">
+                <label> Destination point</label>
+                <input type="text" class="form-control" id="terminalPoint" [(ngModel)]="flight.terminalPoint"
+                    name="terminalPoint" placeholder="Destination" required>
+            </div>
+
+            <div class="form-group">
+                <label> Seating Capacity</label>
+                <input type="number" class="form-control" id="seatingQuantity" [(ngModel)]="flight.seatingQuantity"
+                    name="seatingQuantity" placeholder="Total number of seats" required>
+            </div>
+
+            <div class="form-group">
+                <label style="margin-bottom:0px;"> Cost per seat </label>
+                <input type="number" class="form-control" id="price" [(ngModel)]="flight.price" name="price"
+                    placeholder="Cost" style="margin-right:70px; " required>
+            </div>
+
+            <p style="margin-left:98px; margin-bottom:-30px;color:#EEE2DC;
+         font-weight:550;font-size:17px;">Type Of Flight:</p>
+
+            <div class="form-check" style="margin-right:80px;margin-top:-90px;margin-left:50px;
+        color:#EEE2DC; font-weight:550;font-size:17px;">
+                <input class="form-check-input" type="radio" name="isInternationalFligh"
+                    [(ngModel)]="flight.isInternationalFlight" id="inlineRadio1" value="true" style="margin-left:50px;">
+                <label class="form-check-label" for="inlineRadio1">International Flight</label>
+            </div>
+
+            <div class="form-check" style="margin-top: 50px;margin-left:-244px;margin-bottom:100px;
+          color:#EEE2DC; font-weight:550;font-size:17px;">
+                <input class="form-check-input" type="radio" name="isInternationalFlight"
+                    [(ngModel)]="flight.isInternationalFlight" id="inlineRadio2" value="false">
+                <label class="form-check-label" for="inlineRadio2">Domestic Flight</label>
+            </div>
+
+            <button class="btn btn-success" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
