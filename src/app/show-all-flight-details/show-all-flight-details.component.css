@@ -1,0 +1,117 @@
+table {
+  border-style: solid;
+  margin-left: 190px;
+  margin-right: 95px;
+  margin-top: 20px;
+  width: 81.67%;
+  backdrop-filter: blur(30px);
+  text-align: center;
+  height: 300px;
+  padding-top: -5px;
+  border-spacing: -40px;
+  display: block;
+  overflow-y: auto;
+}
+
+tbody tr {
+  font-weight: 590;
+  color: #620423;
+}
+
+tbody tr:hover {
+  background-color: #EEE2DC;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: -100px;
+  padding-top: 5px;
+  color: #EEE2DC;
+  margin-top: 10px;
+  font-family: 'Rokkitt', serif;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+body {
+  background-image: url("/assets/Images/alexander-schimmeck-DSOohFTAfno-unsplash.jpg");
+  position: absolute;
+  width: 108.95%;
+  height: 101.6%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 0px;
+  margin-top: -10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.Logout-button {
+  outline: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 900;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 1050px;
+  color: #AC3B61;
+  background-color: #EDC7B7;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 5px rgba(172, 59, 97, 0.6);
+}
+
+.Logout-button:hover {
+  background-color: #EEE2DC;
+}
+
+.Logout-button:active {
+  background-color: #EDC7B7;
+  box-shadow: 0 5px #AC3B61;
+  transform: translateY(4px);
+}
+
+h2 {
+  text-shadow:
+    0 0 7px #123C69,
+    0 0 10px #123C69,
+    0 0 21px #123C69,
+    0 0 42px #AC3B61,
+    0 0 82px #AC3B61,
+    0 0 92px #AC3B61,
+    0 0 102px #AC3B61,
+    0 0 151px #AC3B61;
+  animation: glow 0.80s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes glow {
+  100% {
+    text-shadow:
+      0 0 4px #123C69,
+      0 0 11px #123C69,
+      0 0 19px #123C69,
+      0 0 40px #AC3B61,
+      0 0 80px #AC3B61,
+      0 0 90px #AC3B61,
+      0 0 100px #AC3B61,
+      0 0 151px #AC3B61;
+  }
+
+  0% {
+    text-shadow:
+      0 0 4px #123C69,
+      0 0 10px #123C69,
+      0 0 18px #123C69,
+      0 0 38px #AC3B61,
+      0 0 73px #AC3B61,
+      0 0 80px #AC3B61,
+      0 0 94px #AC3B61,
+      0 0 140px #AC3B61;
+  }
+}
+
+thead tr {
+  font-weight: 550;
+  color: #123C69;
+}
